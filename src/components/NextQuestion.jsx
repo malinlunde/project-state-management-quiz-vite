@@ -4,7 +4,7 @@ export function NextQuestion() {
     const quizStore = useQuizStore(); //Initialize the store
 
     const handleNextQuestion = () => {
-        quizStore.goToNetQuestions(); //Call the got to next question action 
+        quizStore.goToNextQuestions(); //Call the got to next question action 
     };
 
     return (
