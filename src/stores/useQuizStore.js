@@ -3,7 +3,7 @@ import { create } from "zustand";
 const questions = [
   {
     id: 1,
-    questionText: 'Who set the O What is the primary ingredient in the traditional Japanese dish "Okonomiyaki"?',
+    questionText: 'What is the primary ingredient in the traditional Japanese dish "Okonomiyaki"?',
     options: ["Soba noodles", "Tempura", "Cabbage", "Tofu"],
     correctAnswerIndex: 2,
   },
