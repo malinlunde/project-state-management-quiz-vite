@@ -1,4 +1,6 @@
 import useQuizStore from "../stores/useQuizStore"; // Adjust the path accordingly
+import { NextQuestion } from "./NextQuestion";
+import { RestartButton } from "./RestartButton";
 
 export const CurrentQuestionZustand = () => {
   const questions = useQuizStore((state) => state.questions);
@@ -15,6 +17,28 @@ export const CurrentQuestionZustand = () => {
     <div className="managed-component">
       <h2>Using Zustand</h2>
       <h1>Question {question.id}/7: {question.questionText}</h1>
+
+      <div className="options-container">
+      {question.options.map((option)=>{
+        return (
+          <div className="option" key={option}>
+          
+         <label htmlFor={option}>
+            <input type="radio" id={option} name={question.id} value={option}/>
+          {option}</label>
+        </div>
+
+        )
+      })}
+   
+        
+
+      </div>
+      <div className="btn-container">
+        <NextQuestion />
+        <RestartButton />
+
+      </div>
     </div>
   );
 };

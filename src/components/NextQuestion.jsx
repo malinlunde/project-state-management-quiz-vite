@@ -1,10 +1,10 @@
-import { useQuizStore } from './stores/useQuizStore';
+import  useQuizStore  from '../stores/useQuizStore';
 
 export function NextQuestion() {
     const quizStore = useQuizStore(); //Initialize the store
 
     const handleNextQuestion = () => {
-        quizStore.goToNextQuestions(); //Call the got to next question action 
+        quizStore.goToNextQuestion(); //Call the got to next question action 
     };
 
     return (

@@ -12,18 +12,95 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url("/public/7290759.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  font-family: "Droid Sans" , "sans-sarif";
+}
 
 /* Components Structure */
 .managed-component {
-  outline: 1px solid red;
-  padding: 2em;
-  margin-bottom: 1em;
+  padding: 1em;
+
   font-size: 1em;
+  background-color: rgba(275, 275, 275, 0.2);
+  color: aliceblue;
 }
 .managed-component h2 {
   text-align: center;
   font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 .managed-component h1 {
   font-size: 1em;
+}
+.options-container{
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+.option{
+  width: 180px;
+  height: 40px;
+  background-color: rgb(225, 225, 225);
+  color: black;
+  text-align: left;
+  margin: 10px;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all .2s;
+
+}
+.option:hover{
+  background-color: rgb(177, 128, 211);
+}
+.option:active{
+  transform: scale(0.8);
+}
+input{
+  margin-right: 10px;
+}
+.btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+button{
+  border: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all .2s;
+  background-color: rgb(225, 225, 225);
+
+}
+button:hover{
+  background-color: rgb(177, 128, 211);
+}
+button:active{
+  transform: scale(0.8);
+}
+@media screen and (min-width:740px) {
+  .options-container{
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  
+  }
+ 
+  
 }

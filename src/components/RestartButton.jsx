@@ -1,10 +1,12 @@
-import { useQuizStore } from './stores/useQuizStore';
+import useQuizStore from '../stores/useQuizStore';
 
-export function RestartComponent() {
-    const quizStore = useQuizStore(); //Initialize the store
+
+
+export function RestartButton() {
+    const { restart }  = useQuizStore(); //Initialize the store
 
     const handleRestart = () => {
-        quizStore.restart(); //Call the restart action to reset the quiz
+        restart(); //Call the restart action to reset the quiz
     };
 
     return (
