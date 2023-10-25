@@ -1,4 +1,4 @@
-import React from "react";
+
 import RestartButton from "./RestartButton";
 import { useQuizStore } from "../stores/useQuizStore";
 
