@@ -9,7 +9,7 @@ export const Summary = () => {
     return (
         <div className="summary">
             <h2>Are you a quiz-master or what?</h2>
-            <p>You've got {numberOfCorrectAnswers}/7!</p>
+            <p>You've got {numberOfCorrectAnswers}/7 correct answers!</p>
             <p>Play again?</p>
             <RestartButton />
         </div>
