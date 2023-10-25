@@ -1,0 +1,17 @@
+import React from "react";
+import RestartButton from "./RestartButton";
+import { useQuizStore } from "../stores/useQuizStore";
+
+export const Summary = () => {
+    const answers = useQuizStore((state) => state.answers);
+    const numberOfCorrectAnswers = answers.filter((answer) => answer.isCorrect).length;
+
+    return (
+        <div className="summary">
+            <h2>Are you a quiz-master or what?</h2>
+            <p>You've got {numberOfCorrectAnswers}/7!</p>
+            <p>Play again?</p>
+            <RestartButton />
+        </div>
+    );
+};
