@@ -1,6 +1,7 @@
+/* eslint-disable react/no-unescaped-entities */
 
-import RestartButton from "./RestartButton";
-import { useQuizStore } from "../stores/useQuizStore";
+import  { RestartButton } from "./RestartButton";
+import useQuizStore from "../stores/useQuizStore";
 
 export const Summary = () => {
     const answers = useQuizStore((state) => state.answers);
