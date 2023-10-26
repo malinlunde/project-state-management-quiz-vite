@@ -1,6 +1,7 @@
 import useQuizStore from "../stores/useQuizStore"; // Adjust the path accordingly
 import { NextQuestion } from "./NextQuestion";
 import { RestartButton } from "./RestartButton";
+import { SummaryButton } from "./SummaryButton";
 
 export const CurrentQuestionZustand = () => {
   const questions = useQuizStore((state) => state.questions);
@@ -37,6 +38,7 @@ export const CurrentQuestionZustand = () => {
       <div className="btn-container">
         <NextQuestion />
         <RestartButton />
+        <SummaryButton />
 
       </div>
     </div>
