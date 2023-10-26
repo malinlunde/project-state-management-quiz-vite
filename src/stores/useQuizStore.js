@@ -62,7 +62,7 @@ const questions = [
 const useQuizStore = create((set) => ({
   questions,
   answers: [],
-  currentQuestionIndex: 0,
+  currentQuestionIndex: null,
   quizOver: false,
 
   submitAnswer: (questionId, answerIndex) => {
@@ -86,7 +86,6 @@ const useQuizStore = create((set) => ({
         {
           questionId,
           answerIndex,
-          question,
           answer: question.options[answerIndex],
           isCorrect: question.correctAnswerIndex === answerIndex,
         },
@@ -96,6 +95,9 @@ const useQuizStore = create((set) => ({
 
   goToNextQuestion: () => {
     set((state) => {
+      if(state.currentQuestionIndex == null){
+        return { currentQuestionIndex: 0};
+      }
       if (state.currentQuestionIndex + 1 === state.questions.length) {
         return { quizOver: true };
       } else {
@@ -104,10 +106,11 @@ const useQuizStore = create((set) => ({
     });
   },
 
+
   restart: () => {
     set({
       answers: [],
-      currentQuestionIndex: 0,
+      currentQuestionIndex: null,
       quizOver: false,
     });
   },

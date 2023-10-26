@@ -18,7 +18,7 @@ code {
   box-sizing: border-box;
 }
 body{
-  background-image: url("/public/7290759.jpg");
+  background-image: url("/7290759.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
