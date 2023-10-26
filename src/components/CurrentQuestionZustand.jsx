@@ -2,14 +2,9 @@
 import { useState } from "react";
 import useQuizStore from "../stores/useQuizStore"; // Adjust the path accordingly
 import { NextQuestion } from "./NextQuestion";
-<<<<<<< HEAD
-import { RestartButton } from "./RestartButton";
-import { SummaryButton } from "./SummaryButton";
-=======
 import { SubmitBtn } from "./submitBtn";
 import { StartBtn } from "./StartBtn";
 import { Summary } from "./Summary";
->>>>>>> 21468cc905205daa9129ec57b55a8da4abed8d95
 
 
 const Question = () => {
@@ -60,10 +55,6 @@ const Answer = () => {
       </div>
       <div>
         <NextQuestion />
-<<<<<<< HEAD
-        <RestartButton />
-        <SummaryButton />
-=======
       </div>
     </div>
   )
@@ -71,7 +62,6 @@ const Answer = () => {
 }
 
 const Start = () => {
->>>>>>> 21468cc905205daa9129ec57b55a8da4abed8d95
 
   return(
     <div>
