@@ -112,20 +112,6 @@ const useQuizStore = create((set) => ({
     });
   },
 
-  // Add a setStep action to control the flow of the quiz
-  setStep: (step) => {
-    set({ step });
-  },
-
-  // Helper function to check if it's the last question
-  isLastQuestion: () => {
-    return useQuizStore.getState().currentQuestionIndex === questions.length - 1;
-  },
-
-  // Helper function to get the current question
-  getCurrentQuestion: () => {
-    return questions[useQuizStore.getState().currentQuestionIndex];
-  },
   
 }));
 

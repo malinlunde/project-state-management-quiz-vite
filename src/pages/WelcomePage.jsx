@@ -1,10 +1,10 @@
-import useQuizStore from '../stores/useQuizStore';
+import { useNavigate } from 'react-router-dom';
 
 export const WelcomePage = () => {
-  const setStep = useQuizStore((state) => state.setStep);
+  const navigate = useNavigate();
 
   const onStartQuiz = () => {
-    setStep(1); // Move to the question page
+    navigate('/quiz'); // Navigate to the question page
   };
 
   return (
