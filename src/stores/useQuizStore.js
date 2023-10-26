@@ -64,6 +64,10 @@ const useQuizStore = create((set) => ({
   answers: [],
   currentQuestionIndex: null,
   quizOver: false,
+  setQuizOver: () => {
+    console.log("Setting quizOver to true");
+    set({ quizOver: true });
+  },
 
   submitAnswer: (questionId, answerIndex) => {
     const question = questions.find((q) => q.id === questionId);

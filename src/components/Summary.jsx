@@ -1,5 +1,4 @@
 import useWindowSize from 'react-use/lib/useWindowSize';
-import "./Summary.css"
 import Confetti from 'react-confetti';
 import  { RestartButton } from "./RestartButton";
 import useQuizStore from "../stores/useQuizStore";

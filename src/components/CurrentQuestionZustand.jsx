@@ -2,9 +2,12 @@
 import { useState } from "react";
 import useQuizStore from "../stores/useQuizStore"; // Adjust the path accordingly
 import { NextQuestion } from "./NextQuestion";
-import { SubmitBtn } from "./submitBtn";
+import { SubmitBtn } from "./SubmitBtn";
 import { StartBtn } from "./StartBtn";
 import { Summary } from "./Summary";
+import { SummaryButton } from "./SummaryButton";
+
+
 
 
 const Question = () => {
