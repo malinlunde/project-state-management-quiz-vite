@@ -9,7 +9,7 @@ export const Summary = () => {
     const { width, height } = useWindowSize();
     return (
         <div className="summary">
-            <h2>Savvy Savor</h2>
+            <h1>Savvy Savor</h1>
             <h3>Congratulations!</h3>
             <p>You scored {numberOfCorrectAnswers}/7 🌟</p>
             <RestartButton />

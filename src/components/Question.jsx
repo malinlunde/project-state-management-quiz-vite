@@ -17,10 +17,13 @@ export const Question = () => {
         setAnswerIndex(Number(e.target.value))
       }
     }
+
+    const numberURL = currentQuestion.numberURL;
+
     return (
       <div>
-        <h2>Using Zustand</h2>
-        <h1>Question {currentQuestion.id}/7: {currentQuestion.questionText}</h1>
+        <img src={numberURL} alt={`Number ${currentQuestion.id}`} />
+        <h2>Question {currentQuestion.id}/7: {currentQuestion.questionText}</h2>
         <div className="options-container">
           {currentQuestion.options.map((option, index)=>{
             return (

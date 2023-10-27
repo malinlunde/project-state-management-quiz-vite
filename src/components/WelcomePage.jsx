@@ -6,7 +6,8 @@ export const WelcomePage = () => {
   return (
     <div>
       <h1>Savvy Savor Quiz</h1>
-      <p>Are you a real foodie? Tack the quiz to find out!</p>
+      <h2>Are you a real foodie?</h2>
+      <h2>Take the quiz to find out!</h2>
       <StartBtn />
     </div>
   );
