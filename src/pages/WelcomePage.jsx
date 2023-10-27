@@ -9,7 +9,8 @@ export const WelcomePage = () => {
 
   return (
     <div>
-      <h1>Welcome to the Quiz!</h1>
+      <h1>Savvy Savor Quiz</h1>
+      <p>Are you a real foodie? Tack the quiz to find out!</p>
       <button onClick={onStartQuiz}>Start Quiz</button>
     </div>
   );

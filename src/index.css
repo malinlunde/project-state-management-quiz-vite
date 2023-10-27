@@ -18,7 +18,7 @@ code {
   box-sizing: border-box;
 }
 body{
-  background-image: url("/7290759.jpg");
+  background-color: #F1EFDD;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@ body{
 
   font-size: 1em;
   background-color: rgba(275, 275, 275, 0.2);
-  color: aliceblue;
+  color: black;
 }
 .managed-component h2 {
   text-align: center;
@@ -53,8 +53,8 @@ body{
 .option{
   width: 180px;
   height: 40px;
-  background-color: rgb(225, 225, 225);
-  color: black;
+  background-color:black;
+  color: #fdfff7;
   text-align: left;
   margin: 10px;
   padding: 10px;
@@ -65,7 +65,8 @@ body{
 
 }
 .option:hover{
-  background-color: rgb(177, 128, 211);
+  background-color: #b4adea;
+  color:black;
 }
 .option:active{
   transform: scale(0.8);
@@ -86,11 +87,12 @@ button{
   border-radius: 15px;
   cursor: pointer;
   transition: all .2s;
-  background-color: rgb(225, 225, 225);
-
+  background-color: black;
+  color:#fdfff7;
 }
 button:hover{
-  background-color: rgb(177, 128, 211);
+  background-color: #b4adea;
+  color:black;
 }
 button:active{
   transform: scale(0.8);
