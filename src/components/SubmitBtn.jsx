@@ -15,7 +15,7 @@ export const SubmitBtn = ({answerIndex}) => {
     const currentQuestion = questions[currentQuestionIndex];
 
     const onSubmit = () => {
-        if(answerIndex){
+        if(answerIndex != null){
             submitAnswer(currentQuestion.id, answerIndex)
             return
         }

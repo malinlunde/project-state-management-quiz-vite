@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import  useQuizStore  from '../stores/useQuizStore';
 
-export function NextQuestion() {
+export function NextQuestion({showSammary}) {
     const quizStore = useQuizStore(); //Initialize the store
 
     const handleNextQuestion = () => {
@@ -10,7 +11,7 @@ export function NextQuestion() {
     return (
         <div>
             <button onClick={handleNextQuestion}>
-                Next Question
+                {showSammary ? "See your results!" : "Next Question"}
             </button>
         </div>
     );

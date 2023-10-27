@@ -71,15 +71,12 @@ const useQuizStore = create((set) => ({
   currentQuestionIndex: null,
   quizOver: false,
   setQuizOver: () => {
-    console.log("Setting quizOver to true");
     set({ quizOver: true });
   },
 
   submitAnswer: (questionId, answerIndex) => {
-    console.log("Question ID:", questionId);
-    console.log("Selected Answer Index:", answerIndex);
     const question = questions.find((q) => q.id === questionId);
-    console.log("Correct Answer Index:", question.correctAnswerIndex);
+ 
 
     if (!question) {
       throw new Error(
@@ -101,6 +98,7 @@ const useQuizStore = create((set) => ({
         {
           questionId,
           answerIndex,
+          question,
           answer: question.options[answerIndex],
           isCorrect: question.correctAnswerIndex === answerIndex,
         },

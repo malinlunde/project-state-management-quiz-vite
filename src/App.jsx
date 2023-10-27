@@ -1,10 +1,10 @@
 
 
-import { CurrentQuestionZustand } from './components/CurrentQuestionZustand';
+import { Quize } from './components/Quize';
 
 export const App = () => {
   return (
-    <CurrentQuestionZustand />
+    <Quize />
  
   );
 };
