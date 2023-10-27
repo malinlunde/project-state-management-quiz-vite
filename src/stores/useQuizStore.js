@@ -7,6 +7,7 @@ const questions = [
     options: ["Soba noodles", "Tempura", "Cabbage", "Tofu"],
     correctAnswerIndex: 2,
     imgURL: '/src/assets/images/question-1-img.webp',
+    numberURL: '/src/assets/numbers/number1.svg',
   },
   {
     id: 2,
@@ -15,7 +16,7 @@ const questions = [
     options: ["Paris", "Provence", "Normandy", "Alsace"],
     correctAnswerIndex: 1,
     imgURL: '/src/assets/images/question-2-img.jpg',
-
+    numberURL: '/src/assets/numbers/number2.svg',
   },
   {
     id: 3,
@@ -24,6 +25,7 @@ const questions = [
     options: ["Chicken", "Lamb", "Beef", "Tofu"],
     correctAnswerIndex: 2,
     imgURL: '/src/assets/images/question-3-img.jpg',
+    numberURL: '/src/assets/numbers/number3.svg',
   },
   {
     id: 4,
@@ -32,6 +34,7 @@ const questions = [
     options: ["Saffron", "Cinnamon", "Nutmeg", "Paprika"],
     correctAnswerIndex: 1,
     imgURL: '/src/assets/images/question-4-img.jpg',
+    numberURL: '/src/assets/numbers/number4.svg',
   },
   {
     id: 5,
@@ -40,6 +43,7 @@ const questions = [
     options: ["Thailand", "China", "Vietnam", "Malaysia"],
     correctAnswerIndex: 1,
     imgURL: '/src/assets/images/question-5-img.jpg',
+    numberURL: '/src/assets/numbers/number5.svg',
   },
   {
     id: 6,
@@ -48,6 +52,7 @@ const questions = [
     options: ["Pad Thai noodles", "Coconut milk", "Green papaya", "Tamarind paste"],
     correctAnswerIndex: 2,
     imgURL: '/src/assets/images/question-6-img.jpg',
+    numberURL: '/src/assets/numbers/number6.svg',
   },
   {
     id: 7,
@@ -56,6 +61,7 @@ const questions = [
     options: ["Penne", "Campanelle", "Radiatore", "Orzo"],
     correctAnswerIndex: 3,
     imgURL: '/src/assets/images/question-7-img.jpg',
+    numberURL: '/src/assets/numbers/number7.svg',
   },
 ];
 

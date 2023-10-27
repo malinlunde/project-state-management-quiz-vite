@@ -8,8 +8,6 @@ import { Summary } from "./Summary";
 import { SummaryButton } from "./SummaryButton";
 
 
-
-
 const Question = () => {
   const questions = useQuizStore((state) => state.questions);
   const currentQuestionIndex = useQuizStore(
