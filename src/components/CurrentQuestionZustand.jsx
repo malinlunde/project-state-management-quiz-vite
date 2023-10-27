@@ -20,7 +20,7 @@ const Question = () => {
 
   const onChangeInput = (e) => {
     if(e.target.checked){
-      console.log(e.target.value)
+      console.log("Selected Answer Value:", e.target.value)
       setAnswerIndex(e.target.value)
     }
   }
@@ -89,7 +89,8 @@ export const CurrentQuestionZustand = () => {
   const question = currentQuestionIndex != null ? questions[currentQuestionIndex] : null;
   const currentQuestionAnswer = currentQuestionIndex != null ? answers.find((a) => a.questionId === question.id) : null;
 
-
+console.log("Current Question Index:", currentQuestionIndex);
+console.log("Answers:", answers);
 
 
   return (

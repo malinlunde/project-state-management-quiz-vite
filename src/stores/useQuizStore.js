@@ -76,7 +76,10 @@ const useQuizStore = create((set) => ({
   },
 
   submitAnswer: (questionId, answerIndex) => {
+    console.log("Question ID:", questionId);
+    console.log("Selected Answer Index:", answerIndex);
     const question = questions.find((q) => q.id === questionId);
+    console.log("Correct Answer Index:", question.correctAnswerIndex);
 
     if (!question) {
       throw new Error(
@@ -90,7 +93,9 @@ const useQuizStore = create((set) => ({
       );
     }
 
+
     set((state) => ({
+      
       answers: [
         ...state.answers,
         {
