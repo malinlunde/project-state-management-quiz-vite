@@ -40,6 +40,10 @@ h1 {
   font-size: 54px;
 }
 
+h2 {
+  font-family: var(--paragraph-font);
+}
+
 p {
   font-family: var(--paragraph-font);
 }
@@ -49,20 +53,33 @@ p {
   background-color: rgba(275, 275, 275, 0.2);
   color: var(--secondary);
   width: 400px;
-  height: 500px;
+  height: 600px;
 }
 
 .managed-component h2 {
   text-align: center;
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .managed-component h1 {
   font-size: 40px;
   margin-bottom: 50px;
   margin-top: 40px;
+}
+
+.managed-component h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.managed-component p {
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
 .options-container{
@@ -143,6 +160,8 @@ label{
   max-width: 100%;
   max-height: 100%;
 }
+
+
 
 @media screen and (min-width:740px) {
   .options-container{
