@@ -66,17 +66,15 @@ p {
 }
 
 .options-container{
-  margin: 20px 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
+  margin: 20px 0; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
 }
 
 .option{
-  width: 180px;
-  height: 40px;
-  background-color: var(--secondary);
-  color: var(--primary);
+  width: 100%;
+  height: 40px;  
   text-align: left;
   margin: 10px;
   padding: 10px;
@@ -84,14 +82,9 @@ p {
   border-radius: 30px;
   cursor: pointer;
   transition: all .2s;
-
+  display: flex;
+  align-items: center;
 }
-
-.option:hover{
-  background-color: var(--cta);
-  color: var(--secondary);
-}
-
 .option:active{
   transform: scale(0.8);
 }
