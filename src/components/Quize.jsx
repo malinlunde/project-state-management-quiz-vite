@@ -1,8 +1,8 @@
 
 import useQuizStore from "../stores/useQuizStore"; // Adjust the path accordingly
 import { Summary } from "./Summary";
-import { FeedbackPage } from "../pages/FeedbackPage";
-import { WelcomePage } from "../pages/WelcomePage";
+import { FeedbackPage } from "./FeedbackPage";
+import { WelcomePage } from "./WelcomePage";
 import { Question } from "./Question";
 
 

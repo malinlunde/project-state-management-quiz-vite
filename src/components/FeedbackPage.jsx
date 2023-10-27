@@ -1,5 +1,5 @@
 import useQuizStore from '../stores/useQuizStore';
-import { NextQuestion } from '../components/NextQuestion';
+import { NextQuestion } from './NextQuestion';
 
 export const FeedbackPage = () => {
   const answers = useQuizStore((state) => state.answers);

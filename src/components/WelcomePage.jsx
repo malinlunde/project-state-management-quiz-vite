@@ -1,5 +1,5 @@
 
-import { StartBtn } from '../components/StartBtn';
+import { StartBtn } from './StartBtn';
 
 export const WelcomePage = () => {
 
