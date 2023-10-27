@@ -9,16 +9,15 @@ export const FeedbackPage = () => {
   const isLastQuestion = currentQuestionIndex === questions.length - 1
 
   
-
   const feedbackText = answer.isCorrect
     ? "That's correct!"
-    : `Oops, you almost had it. The correct answer is: ${answer.question.options[answer.question.correctAnswerIndex]}`;
+    : `Ooops! You almost got it right! The correct answer is: ${answer.question.options[answer.question.correctAnswerIndex]}`;
 
 
 
   return (
     <div>
-      <h1>Feedback</h1>
+      <img src={answer.question.imgURL} alt="Question Image" />
       <p>{feedbackText}</p>
       <NextQuestion showSammary={isLastQuestion}/>
     </div>
