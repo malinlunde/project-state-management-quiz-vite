@@ -6,10 +6,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
- /* Font */
- --heading-font: 'Over the Rainbow', cursive;
- --paragraph-font: "Roboto Mono", monospace;
- --button-font: "Roboto", sans-serif;
+  /* Font */
+  --heading-font: 'Over the Rainbow', cursive;
+  --paragraph-font: "Roboto Mono", monospace;
+  --button-font: "Roboto", sans-serif;
 
   /* colors */
   --primary: #F1EFDD;
@@ -18,21 +18,21 @@
 }
 
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 
-body{
+body {
   background-color: var(--primary);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   text-align: center;
-  font-family: 'Roboto' , 'sans-serif';
+  font-family: 'Roboto', 'sans-serif';
 }
 
 h1 {
@@ -46,52 +46,39 @@ h2 {
 
 p {
   font-family: var(--paragraph-font);
+  font-size: 18px;
+  font-weight: 400;
 }
 
 /* Components Structure */
 .managed-component {
-  background-color: rgba(275, 275, 275, 0.2);
-  color: var(--secondary);
-  width: 400px;
-  height: 600px;
+  margin: 0;
 }
 
-.managed-component h2 {
-  text-align: center;
-  font-size: 1em;
-  margin-bottom: 50px;
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.managed-component h1 {
-  font-size: 40px;
-  margin-bottom: 50px;
-  margin-top: 40px;
-}
-
-.managed-component h3 {
-  font-size: 30px;
-  margin-bottom: 20px;
-  margin-top: 40px;
-}
-
-.managed-component p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
-
-.options-container{
-  margin: 20px 0; 
+/* ------------ WELCOME ------------ */
+.welcome-wrapper {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  justify-content: center;
+  padding: 128px 16px;
+  gap: 64px;
+}
+
+/* ------------ QUESTION ------------ */
+.question-wrapper img {
+  padding: 20px;
+}
+
+.options-container {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.option{
+.option {
   width: 100%;
-  height: 40px;  
+  height: 40px;
   text-align: left;
   margin: 10px;
   padding: 10px;
@@ -102,45 +89,50 @@ p {
   display: flex;
   align-items: center;
 }
-.option:active{
+
+.option:active {
   transform: scale(0.8);
 }
 
-input{
+input {
   margin-right: 10px;
 }
 
-.btn-container{
+/* ------------ BUTTONS ----------- */
+.btn-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 50px;
 }
 
-button{
+button {
   border: none;
+  font-family: var(--button-font);
   font-weight: bold;
-  padding: 10px;
+  font-size: 18px;
+  padding: 10px 15px;
   border-radius: 15px;
   cursor: pointer;
   transition: all .2s;
   background-color: var(--secondary);
-  color:#fdfff7;
+  color: #fdfff7;
 }
 
-button:hover{
+button:hover {
   background-color: var(--cta);
   color: var(--secondary);
 }
 
-button:active{
+button:active {
   transform: scale(0.8);
 }
 
-label{
+label {
   width: 100%;
   height: 100%;
   display: inline-block;
+  font-family: var(--paragraph-font);
 }
 
 .answer-img {
@@ -156,19 +148,25 @@ label{
 .circle-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* This ensures the image maintains its aspect ratio and covers the container */
+  object-fit: cover;
+  /* This ensures the image maintains its aspect ratio and covers the container */
   max-width: 100%;
   max-height: 100%;
 }
 
 
+/* ------------ MEDIA QUERIES ------------ */
+
+/* ------------ TABLET ------------ */
 
 @media screen and (min-width:740px) {
-  .options-container{
+  .options-container {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-  
+
   }
- 
-  
+
+
 }
+
+/* ------------ DESKTOP ------------ */

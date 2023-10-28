@@ -4,10 +4,12 @@ import { StartBtn } from './StartBtn';
 export const WelcomePage = () => {
 
   return (
-    <div>
+    <div className='welcome-wrapper'>
       <h1>Savvy Savor Quiz</h1>
-      <h2>Are you a real foodie?</h2>
-      <h2>Take the quiz to find out!</h2>
+      <div className='welcome-info'>
+        <p>Are you a real foodie?</p>
+        <p>Take the quiz to find out!</p>
+      </div>
       <StartBtn />
     </div>
   );
