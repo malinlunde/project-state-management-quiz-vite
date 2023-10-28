@@ -9,13 +9,14 @@ export const Summary = () => {
     const { width, height } = useWindowSize();
     return (
         <div className="summary">
-         
-                <h1>Savvy Savor</h1>
-                <h3>Congratulations!</h3>
-                <p>You scored {numberOfCorrectAnswers}/7 🌟</p>
-                <RestartButton />
-           
-            <Confetti width={width} height={height} />
+
+            <h1>Savvy Savor</h1>
+            <h3>Congratulations!</h3>
+            <p>You scored {numberOfCorrectAnswers}/7 🌟</p>
+            <RestartButton />
+            <div className="confetti-container">
+                <Confetti width={width} height={height} />
+            </div>
         </div>
     );
 };
