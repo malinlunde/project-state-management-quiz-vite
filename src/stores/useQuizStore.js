@@ -15,8 +15,8 @@ const questions = [
       'In which region of France is the classic dish "Bouillabaisse" believed to have originated?',
     options: ["Paris", "Provence", "Normandy", "Alsace"],
     correctAnswerIndex: 1,
-    imgURL: './src/assets/images/question-2-img.jpeg',
-    numberURL: '/src/assets/numbers/number2.svg',
+    imgURL: '/public/assets/images/question-2-img.jpeg',
+    numberURL: '/public/assets/numbers/number2.svg',
   },
   {
     id: 3,
@@ -24,8 +24,8 @@ const questions = [
       'What is the main protein used in the traditional Turkish dish "Iskender Kebab"?',
     options: ["Chicken", "Lamb", "Beef", "Tofu"],
     correctAnswerIndex: 2,
-    imgURL: './src/assets/images/question-3-img.jpeg',
-    numberURL: '/src/assets/numbers/number3.svg',
+    imgURL: '/public/assets/images/question-3-img.jpeg',
+    numberURL: '/public/assets/numbers/number3.svg',
   },
   {
     id: 4,
@@ -33,8 +33,8 @@ const questions = [
       'Which spice, often referred to as "black gold," is a key component in Moroccan cuisine, particularly in dishes like tagine?',
     options: ["Saffron", "Cinnamon", "Nutmeg", "Paprika"],
     correctAnswerIndex: 1,
-    imgURL: './src/assets/images/question-4-img.webp',
-    numberURL: '/src/assets/numbers/number4.svg',
+    imgURL: '/public/assets/images/question-4-img.webp',
+    numberURL: '/public/assets/numbers/number4.svg',
   },
   {
     id: 5,
@@ -42,8 +42,8 @@ const questions = [
       'Which country is famous for its "Peking Duck," a dish known for its crispy skin and tender meat?',
     options: ["Thailand", "China", "Vietnam", "Malaysia"],
     correctAnswerIndex: 1,
-    imgURL: './src/assets/images/question-5-img.webp',
-    numberURL: '/src/assets/numbers/number5.svg',
+    imgURL: '/public/assets/images/question-5-img.webp',
+    numberURL: '/public/assets/numbers/number5.svg',
   },
   {
     id: 6,
@@ -51,8 +51,8 @@ const questions = [
       'What is the key ingredient in the Thai dish "Som Tum"?',
     options: ["Pad Thai noodles", "Coconut milk", "Green papaya", "Tamarind paste"],
     correctAnswerIndex: 2,
-    imgURL: './src/assets/images/question-6-img.webp',
-    numberURL: '/src/assets/numbers/number6.svg',
+    imgURL: '/public/assets/images/question-6-img.webp',
+    numberURL: '/public/assets/numbers/number6.svg',
   },
   {
     id: 7,
@@ -60,8 +60,8 @@ const questions = [
       'Which type of pasta is shaped like small rice grains and is often used in Italian soups?',
     options: ["Penne", "Campanelle", "Radiatore", "Orzo"],
     correctAnswerIndex: 3,
-    imgURL: './src/assets/images/question-7-img.webp',
-    numberURL: '/src/assets/numbers/number7.svg',
+    imgURL: '/public/assets/images/question-7-img.webp',
+    numberURL: '/public/assets/numbers/number7.svg',
   },
 ];
 
