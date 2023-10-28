@@ -6,8 +6,8 @@ const questions = [
     questionText: 'What is the primary ingredient in the traditional Japanese dish "Okonomiyaki"?',
     options: ["Soba noodles", "Tempura", "Cabbage", "Tofu"],
     correctAnswerIndex: 2,
-    imgURL: './src/assets/images/question-1-img.webp',
-    numberURL: '/src/assets/numbers/number1.svg',
+    imgURL: '/public/assets/images/question-1-img.webp',
+    numberURL: '/public/assets/numbers/number1.svg', 
   },
   {
     id: 2,
