@@ -27,7 +27,7 @@ export const FeedbackPage = () => {
         <img className="circle-img" src={answer.question.imgURL} alt="Question Image" />
       </div>
       <div className='feedback-info'>
-        <p>{feedbackText}</p>
+        <div>{feedbackText}</div>
         <NextQuestion showSammary={isLastQuestion} />
       </div>
     </div>
