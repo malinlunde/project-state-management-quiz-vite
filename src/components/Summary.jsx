@@ -1,6 +1,6 @@
 import useWindowSize from 'react-use/lib/useWindowSize';
 import Confetti from 'react-confetti';
-import  { RestartButton } from "./RestartButton";
+import { RestartButton } from "./RestartButton";
 import useQuizStore from "../stores/useQuizStore";
 
 export const Summary = () => {
@@ -9,10 +9,12 @@ export const Summary = () => {
     const { width, height } = useWindowSize();
     return (
         <div className="summary">
-            <h1>Savvy Savor</h1>
-            <h3>Congratulations!</h3>
-            <p>You scored {numberOfCorrectAnswers}/7 🌟</p>
-            <RestartButton />
+         
+                <h1>Savvy Savor</h1>
+                <h3>Congratulations!</h3>
+                <p>You scored {numberOfCorrectAnswers}/7 🌟</p>
+                <RestartButton />
+           
             <Confetti width={width} height={height} />
         </div>
     );

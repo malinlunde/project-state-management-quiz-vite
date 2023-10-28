@@ -11,7 +11,13 @@ export const FeedbackPage = () => {
 
   const feedbackText = answer.isCorrect
     ? "That's correct!"
-    : `Ooops! You almost got it right! The correct answer is: ${answer.question.options[answer.question.correctAnswerIndex]}`;
+    : (
+      <>
+        <p>Ooops!</p>
+        <p>You almost got it right!</p>
+        <p>The correct answer is: {answer.question.options[answer.question.correctAnswerIndex]}</p>
+      </>
+    );
 
 
 
@@ -20,8 +26,10 @@ export const FeedbackPage = () => {
       <div className='answer-img'>
         <img className="circle-img" src={answer.question.imgURL} alt="Question Image" />
       </div>
-      <p>{feedbackText}</p>
-      <NextQuestion showSammary={isLastQuestion} />
+      <div className='feedback-info'>
+        <p>{feedbackText}</p>
+        <NextQuestion showSammary={isLastQuestion} />
+      </div>
     </div>
   );
 };

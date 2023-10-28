@@ -24,7 +24,7 @@ export const SubmitBtn = ({answerIndex}) => {
 
   return (
     <div>
-        <button onClick={onSubmit}>Submit</button>
+        <button className="submit-btn" onClick={onSubmit}>Submit</button>
     </div>
   )
 }
